@@ -45,6 +45,7 @@
                             <div>
                                 <input type="checkbox" 
                                 [checked]="todo.isCompleted"
+                                (click)="onIscompleteUpdate(todo)"
                                 >
                                 <strong class="pl-2">{{todo.todoItem}}</strong>
                             </div>

@@ -86,5 +86,12 @@ export class One1TodoComponent implements OnInit {
     this.todoIsCompleted.nativeElement.value = 'no';
   }
 
-
+  //checkbox update
+  onIscompleteUpdate(todo : Todo) : void{
+    todo.isCompleted = !todo.isCompleted;
+    let getIdx = this.todoArr.findIndex(e => e.todoId === todo.todoId);
+    this.todoArr[getIdx] = todo
+    console.log(this.todoArr);
+  }
+  
 }
