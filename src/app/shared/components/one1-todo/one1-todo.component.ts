@@ -89,9 +89,10 @@ export class One1TodoComponent implements OnInit {
   //checkbox update
   onIscompleteUpdate(todo : Todo) : void{
     todo.isCompleted = !todo.isCompleted;
-    let getIdx = this.todoArr.findIndex(e => e.todoId === todo.todoId);
-    this.todoArr[getIdx] = todo
-    console.log(this.todoArr);
+    console.log(todoArray);
+    
+    // let getIdx = this.todoArr.findIndex(e => e.todoId === todo.todoId);
+    // this.todoArr[getIdx] = todo;
   }
   
 }

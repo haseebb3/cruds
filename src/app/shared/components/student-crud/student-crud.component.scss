@@ -1,0 +1,23 @@
+.stdContainer{
+    height: 500px;
+    overflow-y: auto;
+    
+    
+}
+
+// .fixTr{
+//     position: fixed;
+//     width: 100%;
+//     z-index: 10;
+// }
+
+thead tr {
+  position: sticky;
+  top: 0;
+  
+//   background-color: #000000; /* Solid background is required */
+//   color: #ffffff;
+  z-index: 2;
+//   padding: 12px;
+//   text-align: left;
+}

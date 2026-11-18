@@ -6,21 +6,25 @@ import { One1TodoComponent } from './shared/components/one1-todo/one1-todo.compo
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from "@angular/material/button";
 import {MatIconModule} from "@angular/material/icon";
-import {MatSnackBarModule} from "@angular/material/snack-bar"
+import {MatSnackBarModule} from "@angular/material/snack-bar";
+import { StudentCrudComponent } from './shared/components/student-crud/student-crud.component'
+import { OverlayModule } from '@angular/cdk/overlay';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    One1TodoComponent
+    One1TodoComponent,
+    StudentCrudComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MatButtonModule,
     MatIconModule,
-    MatSnackBarModule
-  ],
+    MatSnackBarModule,
+    OverlayModule
+],
   providers: [],
   bootstrap: [AppComponent]
 })
